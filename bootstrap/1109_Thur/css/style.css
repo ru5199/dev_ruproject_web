@@ -1,0 +1,21 @@
+body {
+    /*background-color: green;*/
+    background: url(../img/music-2902891_640.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.hero {
+       color: #007bff;
+       margin-top: 20%;
+       text-align: center;
+       letter-spacing: -0.05em;
+       line-height: 8.2em;
+       font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.ima {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
