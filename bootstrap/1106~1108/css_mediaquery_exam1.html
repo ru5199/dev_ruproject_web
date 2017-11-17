@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media query ans1</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+	*{
+		padding:0; margin:0;
+	}
+
+	header{
+		background-color: red;
+	}
+
+	section {
+		background-color: blue;
+		border: 1px dotted black;
+
+	}
+
+	footer {
+		background-color: black;
+		color: white;
+	}
+
+	article {
+		border: 1px dotted black;
+		-webkit-box-sizing: border-box;
+
+	}
+
+	.korea {
+
+	}
+
+	@media (min-width: 768px){
+		section {
+			overflow: hidden;
+		}
+		article {
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+	}
+
+	@media (min-width: 992px){
+
+		article {
+			width: 25%;
+		}
+	}
+
+	@media (min-width: 1200px){
+		section {
+
+			background-color: pink;
+		}
+		article {
+			width: 50%;
+
+		}
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>media query</h1>
+	</header>
+	<section>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>
+		<article>
+			<h2>article</h2>
+			<p class="korea">아티클의 내용이 들어가는 자리입니다.</p>
+		</article>			
+	</section>
+	<footer>
+		<p>copyright@primewordpress</p>
+	</footer>
+
+</body>
+</html>

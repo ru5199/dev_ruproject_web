@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>form quiz22</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="http://www.example.com/sub" method="get">
+
+		<h1>프런트엔드 개발자 지원서</h1>
+		<p>HTML, CSS, javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+		<h2>개인정보</h2>
+		<label for="username">이름</label>
+		<input id="username" type="text" name="username">
+		<br>
+		<label for="phonenumber">연락처</label>
+		<input id="phonenumber" type="tel" name="phonenumber">
+		<br>
+		<br>
+
+		<fieldset>
+			<h2>지원 분야</h2>
+			<input id="웹 퍼블리싱" type="radio" name="field" value="웹 퍼블리싱" checked="checked"><label for="웹 퍼블리싱">웹 퍼블리싱</label>
+			<br>
+			<input id="웹 어플리케이션 개발" type="radio" name="field" value="웹 어플리케이션 개발"><label for="웹 어플리케이션 개발">웹 어플리케이션 개발</label>
+			<br>
+			<input id="개발 환경 개선" type="radio" name="field" value="개발 환경 개선"><label for="개발 환경 개선">개발 환경 개선</label>
+			<br>
+		</fieldset>
+
+		<h2>지원 동기</h2>
+		<textarea name="comments" cols="100" rows="10">본사 지원동기를 간략하게 써주세요.</textarea>
+		<input type="submit" name="submitscribe value="접수하기">
+		<button>다시쓰기</button>
+	</form>
+</body>
+</html>

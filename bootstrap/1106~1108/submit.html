@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>html quiz20</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form action="http://www.example.com/sub" method="get">
+		<fieldset>
+			<legend>상세정보</legend>
+			<label for="username">이름: 
+				<input id="username" type="text" name="username">
+			</label>
+			<br>
+			<label for="password">비밀번호: 
+				<input id="password" type="password" name="password">
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>취미</legend>
+			<p>좋아하는 음식은 무엇입니까?<br></p>
+				<label for="면">
+					<input id="면" type="radio" name="food" value="면">면
+				</label>
+				<label for="쌀">
+					<input id="쌀" type="radio" name="food" value="쌀">쌀
+				</label>
+				<label for="과일">
+					<input id="과일"type="radio" name="food" value="과일" checked="checked">과일
+				</label>
+			
+			<br>
+			<br>
+			<label for="의견">의견을 남겨주세요<br>
+				<textarea id="의견" name="comments" cols="20" rows="4">이곳에
+				</textarea><br>
+				<input type="submit" name="subscribe" value="의견 전송">
+			</label>
+		</fieldset>
+	</form>
+</body>	
+</html>
