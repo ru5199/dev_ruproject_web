@@ -1,0 +1,37 @@
+
+.btn1_div{
+    text-align : center;
+    height : 100px;
+}
+
+.btn2_div{
+    text-align : center;
+    height : 150px;
+}
+
+.btn1{
+
+    text-align : right;
+    font-size : 20px;
+    margin : 20px;
+    padding : 10px;
+    background-color : darkgrey;
+    height : 50px;
+    width : 100px;
+}
+
+.btn2{
+
+    text-align : left;
+    margin : 20px;
+    padding : 10px;
+    background-color : darkred;
+    height : 50px;
+    width : 100px;
+}
+
+.a_css{
+    color : blue;
+    text-decoration : underline;
+    cursor : pointer ;
+}
