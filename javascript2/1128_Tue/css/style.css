@@ -165,7 +165,7 @@ h3 {
     cursor : pointer;
 }
 
-.service-item-icon {
+.service-item-icon i{
     color : #34c6d3;
     float : left;
     padding : 15px;
@@ -330,4 +330,34 @@ h4.team-member-designation {
 
 .social-icon i:hover{
     color : #34c6d3;
+}
+
+/*======================================================
+                    Testimonials
+======================================================*/
+
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+}
+
+#testimonials .content-box {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+#customers-testimonials {
+    padding: 50px 0 ;
+}
+.testimonial img {
+    max-width: 180px;
+    margin: 0 auto 0 auto ;
+}
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+}
+.testimonial blockquote p {
+    color: #fff;
 }

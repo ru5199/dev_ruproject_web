@@ -10,7 +10,7 @@
 
 $(function() {
   // Handler for .ready() called.
-  new WOW().init()
+  new WOW().init();
 });
 
 /*===================================================
@@ -45,13 +45,24 @@ $(function() {
 //});
 
 /*===================================================
-                   OwlCarousel2
+                   OwlCarousel
+http://owlcarousel2.github.io/OwlCarousel2/index.html
 ===================================================*/
 
 $(function() {
   // Handler for .ready() called.
-    $(".owl-carousel").owlCarousel({
-         item : 3,
+    $("#team-members").owlCarousel({
+         items : 3,
+         autoplay:true,
+         smartSpeed: 100,
+         loop: true,
+         autoplayHoverPause:true
     });
 
 });
+
+/*==========================================
+        Testimonials
+http://owlcarousel2.github.io/OwlCarousel2/index.html
+===========================================*/
+
