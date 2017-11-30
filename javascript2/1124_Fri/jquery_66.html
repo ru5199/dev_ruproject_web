@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz66</title>
+    <style>
+        .test{
+            //position : absolute ;
+            position : relative;
+            width:100px;
+            height: 100px;
+            background-color:pink;
+        }
+
+        #one{
+            //position: relative;
+            //position : absolute;
+            background-color : blue;
+        }
+
+        #two{
+            //position : absolute ;
+            //position: relative;
+            top : 100px;
+            right : 0;
+
+        }
+
+
+
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+     $(document).ready(function() {
+            $('#one').animate({
+                'right':0
+            },1000, function(){
+                //alert('animate end');
+                //$('#two').css('position','absolute');
+                $('#two').animate({
+                    'left':0
+                }, 1000);
+
+            });
+            /*$('#two').animate({
+                    'right':0
+                },1000);*/
+     });
+    </script>
+</head>
+<body>
+    <div class="test" id="one">hello world one</div>
+    <div class="test" id="two">hello world two</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz104</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            background-color:pink;
+            position: relative;
+        }
+
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').mouseenter(function(event){
+                $('h1:first').text('X좌표는: '+event.pageX);
+                $('h1:last').text('Y좌표는: '+event.pageY);
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+   <div>
+       <h1>X좌표 : </h1>
+       <h1>Y좌표 : </h1>
+   </div>
+</body>
+</html>

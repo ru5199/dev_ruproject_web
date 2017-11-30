@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz67</title>
+    <style>
+        img{
+            width : 400px;
+            height : 200px;
+        }
+
+        #two{
+            display : none;
+            //top : 0px;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#one').fadeOut(1000, function(){
+                $('#two').fadeIn(1000);
+            });
+            //$('#two').fadeIn(1000);
+        });
+
+
+    </script>
+</head>
+<body>
+    <div class="test" id="one">
+        <img src="./img/boating.jpg">
+        <h1>보트 그림</h1>
+    </div>
+    <div class="test" id="two">
+        <img src="./img/morning.jpg">
+        <h1>산책 그림</h1>
+    </div>
+</body>
+</html>

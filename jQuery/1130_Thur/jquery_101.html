@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz101</title>
+    <style>
+        .menu li{
+            border:1px solid black;
+        }
+        .select {
+            background-color: pink;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $('ul li').click(function(event){
+            if($('ul li').attr('class') !== 'select'){
+                $(this).addClass('select');
+            } else {
+                $(this).removeClass('select');
+            }
+        });
+
+        //$('li:eq(2)').click(function(event){
+            //if($('li:eq(2)').attr('class') !== 'select'){
+                //$(this).addClass('select');
+            //} else {
+                //$(this).removeClass('select');
+            //}
+        //});
+    });
+    </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+</body>
+</html>
