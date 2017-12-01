@@ -7,8 +7,23 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('ul').on('click', 'li', function(e){
+            $('ul li').click (function(e){
                 $(this).css('background','pink');
+                var $target = $(this);
+                $('#add').on('click', function(e){
+                    if($target.css("background-color") == 'rgb(255, 192, 203)'){
+                        $target.append($('<li>추가된 아이템</li>'));
+                        $target.css('background', '');
+                    } else {
+
+                    }
+                });
+                $('#del').on('click', function(e){
+                     if($target.css("background-color") == 'rgb(255, 192, 203)'){
+                         $target.remove();
+                     }
+                });
+
             });
 
         });
