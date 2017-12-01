@@ -13,6 +13,14 @@
     <script>
 
     $(document).ready(function() {
+        var fo = 0 ;
+        $('textarea').focus(function(event){
+            fo = fo+1;
+            console.log(fo);
+            if(fo < 2){
+                $('textarea').val('');
+            }
+        });
 
     });
     </script>

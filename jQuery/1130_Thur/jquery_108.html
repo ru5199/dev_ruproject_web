@@ -13,10 +13,18 @@
     <script>
 
     $(document).ready(function() {
-        $('input').focus(function(event){
-            for(var i = 0 ; i < 4 ; i++);
+        $('input').blur(function(event){
+            //var length = 4;
+            //$('#password').after($('<span>패스워드는 '+'<strong>4글자 이상</strong>'+'이여야 합니다.</span>'))
+            if($('#password').val().length < 4){
+                $('#password').after($('<span>패스워드는 '+'<strong>4글자 이상</strong>'+'이여야 합니다.</span>'));
+            } else{
+
+            }
 
         });
+
+        //$('#password2').val();
     });
     </script>
 </head>
@@ -25,9 +33,11 @@
     <fieldset>
         <label for="name">이름<input type="text" id="name" name="name" /></label><br><br>
         <label for="mail">이메일<input type="email" id="mail" name="mail" /></label><br><br>
-        <label for="password">패스워드<input type="password" id="password" name="password" /></label><br><br>
+        <label for="password">패스워드<input type="password" id="password" name="password" value=""/></label><br><br>
         <textarea>의견을 남겨주세요</textarea><br><br>
     </fieldset>
+
+    <!--<label for="password">패스워드<input type="password" id="password2" name="password" value="패스워드"/></label>-->
 </form>
 </body>
 </html>

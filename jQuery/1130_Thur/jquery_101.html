@@ -14,22 +14,14 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
     $(document).ready(function() {
-
-        $('ul li').click(function(event){
-            if($('ul li').attr('class') !== 'select'){
+        $('ul li').click(function(){
+            if( $(this).attr('class') !== 'select'){
                 $(this).addClass('select');
             } else {
                 $(this).removeClass('select');
             }
-        });
 
-        //$('li:eq(2)').click(function(event){
-            //if($('li:eq(2)').attr('class') !== 'select'){
-                //$(this).addClass('select');
-            //} else {
-                //$(this).removeClass('select');
-            //}
-        //});
+        });
     });
     </script>
 </head>

@@ -16,15 +16,12 @@
         var style;
         $('div').mouseenter(function (event) {
             style = $(this).css('background-color');
-            //$('div').css('background','blue');
             $(this).css({
-                'background-color' : blue
+                'background-color' : 'blue'
             });
-
         });
-        $('div').mouseleave(function(event){
-            //$('div').css('background','pink');
-            $(this).css('background', style);
+        $('div').mouseleave(function (event){
+            $('div').css('background', style);
         });
 
     });

@@ -15,7 +15,7 @@
     $(document).ready(function() {
         $('input').focus(function(event){
             $('#name').addClass('focus');
-            $('label:first').append($('<span>영문으로 작성하세요.</span>'))
+            $('label:first').after($('<span>영문으로 작성하세요.</span>'))
             $('input').blur(function(event){
                 $('#name').removeClass('focus');
                 $('span').remove();
