@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz113</title>
+    <style>
+        nav div{
+            width:100px;
+            height:100px;
+            background:pink;
+            float:left;
+            margin-right: 20px;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+    var event_list = ['click', 'mouseenter', 'mouseleave', 'dblclick'];
+    var property_lists = [{
+        background : 'green',
+        border : '1px solid red'
+        },{
+        background : 'red',
+        border : '1px solid black'
+        },{
+        background : 'orange',
+        border : '1px solid red'
+        },{
+        background : 'blue',
+        border : '1px solid yellow'
+        }
+
+    ];
+    $(document).ready(function() {
+        $('div').each(function(index){
+            $(this).on(event_list[index], function(e){
+                $(this).css(property_lists[index]);
+            });
+        });
+
+    });
+    </script>
+</head>
+<body>
+<nav>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</nav>
+</body>
+</html>

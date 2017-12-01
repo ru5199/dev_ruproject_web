@@ -15,11 +15,11 @@
     $(document).ready(function() {
         var fo = 0 ;
         $('textarea').focus(function(event){
-            fo = fo+1;
-            console.log(fo);
-            if(fo < 2){
+            if(fo == 0){
                 $('textarea').val('');
             }
+            fo = fo+1;
+            //fo++ 위의 방식과 동일
         });
 
     });

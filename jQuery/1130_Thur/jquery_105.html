@@ -20,7 +20,7 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
     $(document).ready(function() {
-        function store_state(event){
+        function store_state(e){
             $('section').html($('<p>발생한 이벤트 :'+event.type+'</p>' + '<p>이벤트 주체 :'+ $(event.target).text() +'</p>'));
             //console.log(event.target);
             //console.log(event.type);

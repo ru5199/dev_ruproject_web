@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz111</title>
+    <style>
+        nav div{
+            width:100px;
+            height:100px;
+            background:pink;
+            float:left;
+            margin-right: 20px;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+    var event_list = ['click', 'mouseenter', 'mouseleave', 'dblclick'];
+    var color = ['pink', 'yellow', 'orange', 'green'];
+    $(document).ready(function() {
+        $('nav div').each(function(index){
+            $(this).on(event_list[index], function(e){
+                $(this).css('background', color[index]);
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+<nav>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</nav>
+</body>
+</html>

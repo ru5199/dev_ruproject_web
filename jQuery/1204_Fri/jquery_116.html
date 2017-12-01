@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz116</title>
+    <style>
+
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('ul').on('click', 'li', function(event){
+            $(this).css('background','pink');
+            event.stopPropagation();
+        });
+    });
+    </script>
+</head>
+<body>
+<ul>
+    <li>menu</li>
+    <li>menu</li>
+    <li>menu</li>
+    <li>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

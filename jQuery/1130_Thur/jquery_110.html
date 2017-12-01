@@ -38,15 +38,15 @@
 
         var co = 0
         $('#change').click(function (event) {
-            co = co + 1;
             j = co % 2;
-            console.log(j);
-            if( j == 1){
-                $('div ul').css('background', color[0]);
-            } else if(j == 0){
-                $('div ul').css('background', color[1]);
-            }
 
+            $('div ul').css('background', color[j])
+            //if( j == 0){
+                //$('div ul').css('background', color[0]);
+            //} else if(j == 1){
+                //$('div ul').css('background', color[1]);
+            //}
+            co++;
         });
 
     });

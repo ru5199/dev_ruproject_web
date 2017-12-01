@@ -16,10 +16,10 @@
         $('input').focus(function(event){
             $('#name').addClass('focus');
             $('label:first').after($('<span>영문으로 작성하세요.</span>'))
-            $('input').blur(function(event){
-                $('#name').removeClass('focus');
-                $('span').remove();
-            });
+        });
+        $('input').blur(function(event){
+            $('#name').removeClass('focus');
+            $('span').remove();
         });
     });
     </script>
