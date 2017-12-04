@@ -20,7 +20,8 @@
             //var len = $('ul li').length;
             //console.log(ind);
             for(var i = 0 ; i < ind+1 ; i++){
-                $('li:last').append($('<li>추가된 아이템</li>'));
+                //$('li:last').append($('<li>추가된 아이템</li>'));
+                $(this).parent().append($('<li>추가된 아이템</li>'));
             }
 
         });

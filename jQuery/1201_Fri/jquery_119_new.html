@@ -7,25 +7,22 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('ul li').click (function(e){
+            $('ul').on('click', 'li', function(e){
                 $(this).css('background','pink');
-                var $target = $(this);
+                $target = $(this);
                 $('#add').on('click', function(e){
-                    if($target.css("background-color") == 'rgb(255, 192, 203)'){
-                        $target.append($('<li>추가된 아이템</li>'));
-                        $target.css('background', '');
-                    } else {
 
+                    if(==0){
+                        //$target.after($('<li>추가된 아이템</li>'));
+                        //$target.css('background', '');
+                        alert('선택된 것이 없습니다.');
+                    } else{
+                        //alert('선택된 것이 없습니다.');
+                        $target.after($('<li>추가된 아이템</li>'));
+                        $target.css('background', '');
                     }
                 });
-                $('#del').on('click', function(e){
-                     if($target.css("background-color") == 'rgb(255, 192, 203)'){
-                         $target.remove();
-                     }
-                });
-
             });
-
         });
     </script>
 </head>

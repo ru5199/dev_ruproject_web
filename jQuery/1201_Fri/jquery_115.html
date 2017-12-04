@@ -22,7 +22,7 @@
             $('nav').append($('<div>'+(num+1)+'</div>'));
         });
         $('#del').on('click', function(e){
-            $('div:last').remove();
+            $('div:first').remove();
         });
         $('#remove').on('click', function(e){
             $('button').off('click');
