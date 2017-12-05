@@ -40,10 +40,21 @@
   crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            //var select_index = 0;
+            var click = -1;
             $('.contents').on('click', '.header-content', function(e){
                 $(this).addClass('select');
-                $(this).next('.content').css('display', 'block');
+                $(this).next('.content').show();
+
+                if($(this).index() != click){
+                    $('.contents div').eq(click).removeClass('select');
+                    $('.contents div').eq(click).next('.content').hide();
+                    click = $(this).index();
+                } else {
+                    $('.contents div').eq(click).removeClass('select');
+                    $('.contents div').eq(click).next('.content').hide();
+                    click = -1;
+                }
+
 
             });
         });

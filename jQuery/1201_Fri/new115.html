@@ -16,19 +16,17 @@
     <script src="jquery-3.2.1.js"></script>
     <script>
     $(document).ready(function() {
-        //var len
-        $('#add').on('click', function(e){
+        var len;
+        $('#add').on('click', function (e) {
             len = $('nav div').length;
-            $('nav').append($('<div>'+len+'</div>'));
+            $('nav').append($('<div>'+ len + '</div>'));
         });
-        $('#del').on('click', function(e){
-            $('div:first').remove();
+        $('#del').on('click', function (e) {
+            $('nav').children().first().remove();
         });
-        $('#remove').on('click', function(e){
-            $('#add, #del').off('click');
+        $('#remove').on('click', function (e) {
+            $('#add, #del').off();
         });
-
-
     });
     </script>
 </head>

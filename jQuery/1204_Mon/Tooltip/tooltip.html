@@ -32,7 +32,14 @@
     <script>
 
     $(document).ready(function() {
-
+        var title;
+        var state = -1;
+        $('.showBalloon').on('mouseover', function(e){
+            state = $(this).index();
+            title = $(this).attr('title');
+            console.log(title);
+            $('li').eq(state).after($('<li>'+title+'</li>'));
+        });
     });
 
     </script>

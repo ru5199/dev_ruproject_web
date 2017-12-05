@@ -46,6 +46,22 @@
         $('.tab-contents .content').first().css('display', 'block');
         $('.tab-contents .content').addClass('select');
 
+        //menu에 hover시 색 변환
+        $('ul').on('mouseenter', 'li', function(e){
+            $(this).removeClass('select');
+            $(this).addClass('hover');
+            $(this).animate({
+                'padding' : '10px 0 20px 0'
+            },400);
+        });
+        $('ul').on('mouseleave', 'li', function(e){
+            console.log($(this).index());
+            $(this).removeClass('hover');
+            $('ul li').eq(select_index).addClass('select');
+            $(this).animate({
+                'padding' : '0'
+            },400);
+        });
 
 
         //각 menu 클릭 시 색 변하고 각 div 뜨기
@@ -58,22 +74,7 @@
             $('.tab-contents .content').eq(select_index).css('display', 'block');
         });
 
-        //menu에 hover시 색 변환
-        $('ul').on('mouseenter', 'li', function(e){
-            $(this).eq(select_index).removeClass('select');
-            $(this).addClass('hover');
-            $(this).animate({
-                'padding' : '10px 0 20px 0'
-            },400);
-        });
-        $('ul').on('mouseleave', 'li', function(e){
-            $(this).removeClass('hover');
-            //select_index = $(this).index();
-            $('ul li').eq(select_index).addClass('select');
-            $(this).animate({
-                'padding' : '0'
-            },400);
-        });
+
     });
 
     </script>
