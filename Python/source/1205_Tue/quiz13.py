@@ -3,7 +3,8 @@ txt1 = " is "
 txt2 = "something"
 txt3 = "handsome"
 txt4 = "good"
-
-print(txt5 +)
-print(txt5 +)
-print(txt5 +)
+#txt5 = "poet"
+txt5 = txt[14:];
+print(txt5 + txt1 + txt2);
+print(txt5 + txt1 + txt3);
+print(txt5 + txt1 + txt4);
